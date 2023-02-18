@@ -40,6 +40,7 @@ const musicians = [
   {
     name: 'Drake',
     image: './Images/drake.jpg',
+    image2: './Images/chess-board.jpg',
     alt: 'Drake image',
     title: 'Rapper, Singer, Songwriter',
     description: 'Drake is a Grammy-award winning rapper, singer, and songwriter from Canada, known for his smooth flow and introspective lyrics.',
@@ -48,6 +49,7 @@ const musicians = [
   {
     name: 'Rema',
     image: './Images/rema.jpg',
+    image2: './Images/chess-board.jpg',
     alt: 'Rema image',
     title: 'Afrobeat Singer, Songwriter',
     description: 'Rema is a Nigerian Afrobeat singer and songwriter, known for his unique blend of afrobeats, hip-hop, and R&B.',
@@ -56,6 +58,7 @@ const musicians = [
   {
     name: 'Billie Eilish',
     image: './Images/billieeliish.jpg',
+    image2: './Images/chess-board.jpg',
     alt: 'Billie Eilish image',
     title: 'Singer, Songwriter',
     description: 'Billie Eilish is an American singer and songwriter, known for her unique style of pop and alternative music, and her powerful voice.',
@@ -64,6 +67,7 @@ const musicians = [
   {
     name: 'Bad Bunny',
     image: './Images/badbunny.jpg',
+    image2: './Images/chess-board.jpg',
     alt: 'Bad Bunny image',
     title: 'Reggaeton Singer, Songwriter',
     description: 'Bad Bunny is a Puerto Rican reggaeton singer and songwriter, known for his unique blend of reggaeton, Latin trap, and hip-hop.',
@@ -72,6 +76,7 @@ const musicians = [
   {
     name: 'Hozier',
     image: './Images/Hozier.jpg',
+    image2: './Images/chess-board.jpg',
     alt: 'Hozier image',
     title: 'Singer, Songwriter',
     description: 'Irish singer-songwriter known for his soulful blues-inspired by rock sound and socially conscious lyrics.',
@@ -80,6 +85,7 @@ const musicians = [
   {
     name: 'BTS',
     image: './Images/BTS.jpg',
+    image2: './Images/chess-board.jpg',
     alt: ' BTS image',
     title: 'South Korean boy band',
     description: 'South Korean boy band known for their energetic pop-rap tracks and visually stunning music videos.',
@@ -93,10 +99,20 @@ for (let i = 0; i < musicians.length; i += 1) {
   musiccontainer.className = musicians[i].class;
   musiciansblock.appendChild(musiccontainer);
 
+  const imagecontainer = document.createElement('div');
+  imagecontainer.className = 'image-container';
+  musiccontainer.appendChild(imagecontainer);
+
+  const gridimage = document.createElement('img');
+  gridimage.src = musicians[i].image2;
+  gridimage.className = 'image-sub';
+  imagecontainer.appendChild(gridimage);
+
   const musicianimage = document.createElement('img');
   musicianimage.src = musicians[i].image;
+  musicianimage.className = 'main-image';
   musicianimage.alt = musicians[i].alt;
-  musiccontainer.appendChild(musicianimage);
+  imagecontainer.appendChild(musicianimage);
 
   const concertblock = document.createElement('div');
   concertblock.className = 'concert-block';
