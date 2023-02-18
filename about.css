@@ -3,7 +3,11 @@
 
 @font-face {
   font-family: 'cocogoose';
-  src: url(./cocogoose/Cocogoose\ Pro\ Semilight\ Italic-trial.ttf);
+  src: url(./cocogoose/COCOGOOSE\ PRO\ by\ ZETAFONTS\ -\ Commercial\ information.pdf);
+}
+
+body {
+  margin: 0;
 }
 
 .about {
@@ -18,27 +22,26 @@
 .about h3 {
   font-size: 17px;
   color: #ec5242;
-  font-family: 'Lato', sans-serif;
+  font-family: 'cocogoose', sans-serif;
+  font-weight: 200;
 }
 
 .about h1 {
-  color: transparent;
-  background-image: linear-gradient(to right, red, #ec5242, #b9751c69);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ec5242;
   font-weight: 700;
+  font-family: 'cocogoose', sans-serif;
 }
 
 .description {
   margin: 20px 0 20px 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'cocogoose', sans-serif;
   font-size: 14px;
   background: #f0ecec8c;
   border: 2px solid #fff;
   line-height: 2;
   text-align: center;
   padding: 10px;
-  font-weight: 520;
+  font-weight: 50;
 }
 
 .date {
@@ -63,6 +66,13 @@
   position: relative;
   border-bottom: 2px solid #ebe4e4;
   margin-bottom: 50px;
+}
+
+.logo p {
+  align-items: center;
+  font-family: 'cocogoose', sans-serif;
+  text-align: center;
+  width: 60%;
 }
 
 .logo h3 {
@@ -94,16 +104,16 @@ hr {
   padding: 20px;
 }
 
-.past h2 {
+.small-past h2 {
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: 'cocogoose', sans-serif;
   font-weight: 700;
 }
 
-.past p {
-  font-family: 'Lato', sans-serif;
+.small-past p {
+  font-family: 'cocogoose', sans-serif;
   text-align: center;
-  font-weight: 520;
+  font-weight: 200;
 }
 
 .images {
@@ -134,7 +144,6 @@ hr {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 20px;
 }
 
 .overlay {
@@ -149,7 +158,6 @@ hr {
   justify-content: center;
   text-align: center;
   background-color: rgba(255, 0, 0, 0.5);
-  border-radius: 20px;
 }
 
 .overlay h3 {
@@ -313,13 +321,31 @@ hr {
   .header1 {
     display: none;
   }
+
+  .logo img {
+    width: 95%;
+    height: 200px;
+    object-fit: contain;
+    border: 1px solid rgb(187, 185, 185);
+  }
 }
 
 @media (min-width: 768px) {
   header {
     display: flex;
     flex-direction: column;
-    position: relative;
+    align-items: center;
+    height: 130px;
+    background-color: #f1f1f1;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin: 30px 0 30px 0;
   }
 
   .header1 {
@@ -331,8 +357,6 @@ hr {
     gap: 15px;
     text-align: center;
     top: 0;
-    position: absolute;
-    z-index: 1000;
   }
 
   .header1 i {
@@ -357,7 +381,8 @@ hr {
     height: 100px;
     background: #fff;
     align-items: center;
-    position: relative;
+    position: absolute;
+    top: 30px;
   }
 
   .hambuger {
@@ -408,6 +433,7 @@ hr {
     margin-right: 50px;
     font-weight: 570;
     position: absolute;
+    background: #fff;
     right: 0;
   }
 
@@ -417,10 +443,11 @@ hr {
 
   .header-logo img {
     width: 130px;
-    height: 130px;
+    height: 100px;
     object-fit: contain;
     position: absolute;
     top: 0;
+    left: 8%;
   }
 
   .small-about {
@@ -437,9 +464,10 @@ hr {
   }
 
   .logo img {
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 200px;
     object-fit: contain;
+    border: 1px solid rgb(187, 185, 185);
   }
 
   .small-past {
