@@ -82,12 +82,11 @@ my project is a simple HTML and CSS page whose primary goal is is to master all 
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo <a name="live-demo">https://unleashedicon.github.io/capstone-project1/</a>
 
 
-- https://unleashedicon.github.io/personal-portfolio-project/
 
-## Video Walkthrough: https://www.loom.com/share/355b71553c7244fa8aa49ac28cf96b6a
+## Video Walkthrough:<a name = "loom"> https://www.loom.com/share/355b71553c7244fa8aa49ac28cf96b6a</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
