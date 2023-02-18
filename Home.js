@@ -74,7 +74,7 @@ const musicians = [
     image: './Images/Hozier.jpg',
     alt: 'Hozier image',
     title: 'Singer, Songwriter',
-    description: 'Irish singer-songwriter known for his soulful blues-inspired rock sound and socially conscious lyrics.',
+    description: 'Irish singer-songwriter known for his soulful blues-inspired by rock sound and socially conscious lyrics.',
     class: 'musician-card hidden',
   },
   {
