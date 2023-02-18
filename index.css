@@ -519,7 +519,7 @@ hr {
   .content {
     display: flex;
     flex-direction: column;
-    width: 180px;
+    width: 100%;
     text-align: left;
     align-items: flex-start;
     height: 450px;
@@ -535,7 +535,7 @@ hr {
   }
 
   .custom-col-12 {
-    max-width: 20.2%;
+    max-width: 17.2%;
     margin: 0;
     flex-shrink: 0;
     padding-left: 20px;
